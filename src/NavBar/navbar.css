@@ -1,0 +1,74 @@
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #ffffff;
+  padding: 0;
+  width: 100%;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 200px;
+  height: 150px;
+  margin-right: 1rem;
+}
+
+.links {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.links a {
+  margin-right: 1rem;
+  text-decoration: none;
+  color: #333;
+}
+
+.search-bar {
+  margin-left: auto;
+  margin-right: 1rem;
+}
+
+.combo-box {
+  position: relative;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.combo-box select {
+  appearance: none;
+  background-color: #ffffff;
+  border: none;
+  padding: 0.5rem;
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+  width: 200px;
+}
+
+.combo-box::after {
+  content: "\25BC";
+  position: absolute;
+  top: 50%;
+  right: 0.5rem;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #999;
+}
+
+
+.combo-box select option {
+  background-color: #ffffff;
+  color: #333;
+}
+
+
+.combo-box:hover::after {
+  color: #666;
+}

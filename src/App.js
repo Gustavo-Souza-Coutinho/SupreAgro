@@ -1,23 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import ListarProdutos from './ModuloProdutos/ListarProdutos';
+import NavBar from './NavBar/NavBar';
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import IncluirProduto from './ModuloProdutos/IncluirProduto';
+import Home from './ModuloProdutos/Home';
+import FormEdicao from './ModuloProdutos/FormEdicao';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <NavBar></NavBar>
+
+      <BrowserRouter>
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route path='/ListarProduto' element={<ListarProdutos />} />
+          <Route path='/IncluirProduto' element={<IncluirProduto />} />
+          <Route path='/Contato' />
+          <Route path='/Sobre' />
+          <Route path='/editar/:id' element={<FormEdicao />} />
+        </Routes>
+      </BrowserRouter>
+
     </div>
   );
 }
