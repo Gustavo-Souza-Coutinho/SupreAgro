@@ -64,48 +64,79 @@ function IncluirProduto(props) {
             alignItems: "flex-start",
             marginBottom: "1rem",
           }}
+
         >
-          Nome:
-          <input
-            type="text"
-            ref={nomeRef}
-            name="nome"
-            style={{ marginTop: "0.5rem" }} // Adicione estilo CSS aqui
-          />
+
+          <div style={{
+            boxShadow: "0px 0px 10px rgba(0,0,0,0.5)",
+            padding: "20px",
+            borderRadius: "10px",
+          }}>
+            <div className="container">
+              <h2>Formulário de cadastro</h2>
+              <label
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "flex-start",
+                  marginBottom: "1rem",
+                }}
+              >
+                Nome:
+                <input
+                  type="text"
+                  ref={nomeRef}
+                  name="nome"
+                  style={{ marginTop: "0.5rem" }} // Adicione estilo CSS aqui
+                />
+              </label>
+              <label
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "flex-start",
+                  marginBottom: "1rem",
+                }}
+              >
+                Descrição:
+                <input
+                  type="text"
+                  ref={descricaoRef}
+                  name="descricao"
+                  style={{ marginTop: "0.5rem" }} // Adicione estilo CSS aqui
+                />
+              </label>
+              <label
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "flex-start",
+                  marginBottom: "1rem",
+                }}
+              >
+                Preço:
+                <input
+                  type="text"
+                  ref={precoRef}
+                  name="preco"
+                  style={{ marginTop: "0.5rem" }} // Adicione estilo CSS aqui
+                />
+              </label>
+              <label
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "flex-start",
+                  marginBottom: "1rem",
+                }}
+              >
+              </label>
+              <input type="button" value="Salvar" onClick={gravar} />
+
+            </div>
+          </div>
+
         </label>
-        <label
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "flex-start",
-            marginBottom: "1rem",
-          }}
-        >
-          Descrição:
-          <input
-            type="text"
-            ref={descricaoRef}
-            name="descricao"
-            style={{ marginTop: "0.5rem" }} // Adicione estilo CSS aqui
-          />
-        </label>
-        <label
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "flex-start",
-            marginBottom: "1rem",
-          }}
-        >
-          Preço:
-          <input
-            type="number"
-            ref={precoRef}
-            name="preco"
-            style={{ marginTop: "0.5rem" }} // Adicione estilo CSS aqui
-          />
-        </label>
-        <input type="button" value="Salvar" onClick={gravar} />
       </form>
       <ToastContainer /> {/* Adicione o ToastContainer para exibir as notificações */}
     </div>

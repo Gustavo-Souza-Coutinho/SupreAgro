@@ -1,3 +1,79 @@
 {
-  "produtos": []
+  "produtos": [
+    {
+      "nome": "andre",
+      "descricao": "viado",
+      "preco": "24",
+      "id": 1
+    },
+    {
+      "nome": "asdwa",
+      "descricao": "sde",
+      "preco": "161",
+      "id": 2
+    },
+    {
+      "nome": "grnyh",
+      "descricao": "ewff",
+      "preco": "6546",
+      "id": 3
+    },
+    {
+      "nome": "sgrget",
+      "descricao": "6161",
+      "preco": "dfbbe",
+      "id": 4
+    }
+  ],
+  "clientes": [
+    {
+      "nome": "asdw",
+      "cpf": "123",
+      "email": "123",
+      "telefone": "123",
+      "id": 1
+    },
+    {
+      "nome": "uiki",
+      "cpf": "1244345",
+      "email": " n jtj r",
+      "telefone": "12243456",
+      "id": 2
+    },
+    {
+      "nome": "asda",
+      "cpf": "",
+      "email": "",
+      "telefone": "",
+      "id": 3
+    },
+    {
+      "nome": "fbfv",
+      "cpf": "",
+      "email": "",
+      "telefone": "",
+      "id": 4
+    },
+    {
+      "nome": "df d ",
+      "cpf": "",
+      "email": "",
+      "telefone": "",
+      "id": 5
+    },
+    {
+      "nome": "r wrf w",
+      "cpf": "",
+      "email": "",
+      "telefone": "",
+      "id": 6
+    },
+    {
+      "nome": "f ff erfe",
+      "cpf": "",
+      "email": "",
+      "telefone": "",
+      "id": 7
+    }
+  ]
 }

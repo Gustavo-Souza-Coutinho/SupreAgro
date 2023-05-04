@@ -8,24 +8,20 @@ import "primereact/resources/themes/lara-light-indigo/theme.css";
 import "primereact/resources/primereact.min.css";
 import "primeicons/primeicons.css";
 
-// Estilo para adicionar margem à parte superior do componente
-const listarProdutosContainerStyle = {
-  marginTop: '130px' // Ajuste o valor para a quantidade de espaçamento desejada
-};
 
-function ListarProdutos() {
+function ListarClientes() {
 
-  const [produtos, setProdutos] = useState([]);
+  const [clientes, setclientes] = useState([]);
 
   const obterDados = () => {
     const api = axios.create({
       baseURL: "http://localhost:3000"
     });
 
-    api.get("/produtos")
+    api.get("/clientes")
       .then((response) => {
         console.log(response.data)
-        setProdutos(response.data);
+        setclientes(response.data);
       })
       .catch((err) => {
         console.error("erro ao listar");
@@ -38,10 +34,10 @@ function ListarProdutos() {
       baseURL: "http://localhost:3000"
     });
 
-    api.delete(`/produtos/${id}`)
+    api.delete(`/clientes/${id}`)
       .then((response) => {
         console.log(response.data)
-        // Atualiza a lista de produtos após a exclusão
+        // Atualiza a lista de clientes após a exclusão
         obterDados();
       })
       .catch((err) => {
@@ -85,15 +81,16 @@ function ListarProdutos() {
             padding: "20px",
             borderRadius: "10px",
         }}>
-
-      <DataTable value={produtos} tableStyle={{ minWidth: '50rem' }}>
+            <div className="container">
+            <DataTable value={clientes} tableStyle={{ minWidth: '50rem' }}>
         <Column field="id" header="ID"></Column>
         <Column field="nome" header="Nome"></Column>
-        <Column field="descricao" header="Descrição"></Column>
-        <Column field="preco" header="Preço"></Column>
+        <Column field="cpf" header="cpf"></Column>
+        <Column field="email" header="email"></Column>
+        <Column field="telefone" header="telefone"></Column>
         <Column header="Ação" body={mostraBotoes}></Column>
       </DataTable>
-   
+            </div>
         </div>
 
     </form>
@@ -101,4 +98,4 @@ function ListarProdutos() {
   );
 }
 
-export default ListarProdutos;
+export default ListarClientes;

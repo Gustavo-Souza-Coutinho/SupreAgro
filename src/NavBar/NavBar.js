@@ -32,7 +32,7 @@ function NavBar() {
               <label htmlFor="home-select"></label>
               <select id="home-select" onChange={handleOptionChange}>
                 <option value="">Clientes</option>
-                <option value="/cadastrarCliente">Cadastrar Cliente</option>
+                <option value="/incluirCliente">Cadastrar Cliente</option>
                 <option value="/listarCliente">Listar Clientes</option>
               </select>
             </div>

@@ -6,6 +6,9 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import IncluirProduto from './ModuloProdutos/IncluirProduto';
 import Home from './ModuloProdutos/Home';
 import FormEdicao from './ModuloProdutos/FormEdicao';
+import IncluirCliente from './ModuloProdutos/IncluirCliente';
+import ListarClientes from './ModuloProdutos/ListarClientes';
+import CadastroPedido from './ModuloProdutos/CadastrarPedido';
 
 function App() {
   return (
@@ -18,7 +21,9 @@ function App() {
           <Route exact path="/" element={<Home />} />
           <Route path='/ListarProduto' element={<ListarProdutos />} />
           <Route path='/IncluirProduto' element={<IncluirProduto />} />
-          <Route path='/Contato' />
+          <Route path='/incluirCliente' element={<IncluirCliente />}/>
+          <Route path='/listarCliente' element={<ListarClientes />}/>
+          <Route path='/cadastrarPedidos ' element={<CadastroPedido />}/>
           <Route path='/Sobre' />
           <Route path='/editar/:id' element={<FormEdicao />} />
         </Routes>
