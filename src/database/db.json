@@ -1,12 +1,6 @@
 {
   "produtos": [
     {
-      "nome": "andre",
-      "descricao": "viado",
-      "preco": "24",
-      "id": 1
-    },
-    {
       "nome": "asdwa",
       "descricao": "sde",
       "preco": "161",
