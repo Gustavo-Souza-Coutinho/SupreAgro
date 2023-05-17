@@ -1,73 +1,72 @@
 {
   "produtos": [
     {
-      "nome": "asdwa",
-      "descricao": "sde",
-      "preco": "161",
+      "nome": "arroz",
+      "descricao": "arroz em KG",
+      "preco": "4.00",
+      "id": 5
+    },
+    {
+      "nome": "feijao",
+      "descricao": "feijao em KG",
+      "preco": "5.00",
+      "id": 5
+    },
+    {
+      "nome": "batata",
+      "descricao": "batata em KG",
+      "preco": "3.00",
+      "id": 5
+    },
+    {
+      "nome": "macarrao",
+      "descricao": "macarrao em KG",
+      "preco": "10",
+      "id": 5
+    }
+  ],
+  "pedidos": [
+    {
+      "clienteId": "1",
+      "produtoId": "5",
+      "quantidade": "1",
+      "id": 1
+    },
+    {
+      "clienteId": "1",
+      "produtoId": "5",
+      "quantidade": "999",
       "id": 2
-    },
-    {
-      "nome": "grnyh",
-      "descricao": "ewff",
-      "preco": "6546",
-      "id": 3
-    },
-    {
-      "nome": "sgrget",
-      "descricao": "6161",
-      "preco": "dfbbe",
-      "id": 4
     }
   ],
   "clientes": [
     {
-      "nome": "asdw",
+      "nome": "felipe",
       "cpf": "123",
       "email": "123",
       "telefone": "123",
       "id": 1
     },
     {
-      "nome": "uiki",
-      "cpf": "1244345",
-      "email": " n jtj r",
-      "telefone": "12243456",
+      "nome": "andre",
+      "cpf": "4895123089",
+      "email": "andre@hotmailcom",
+      "telefone": "14996504898",
       "id": 2
     },
     {
-      "nome": "asda",
-      "cpf": "",
-      "email": "",
-      "telefone": "",
+      "nome": "joao",
+      "cpf": "123",
+      "email": "123",
+      "telefone": "123",
       "id": 3
     },
     {
-      "nome": "fbfv",
-      "cpf": "",
-      "email": "",
-      "telefone": "",
+      "nome": "marcelo",
+      "cpf": "123",
+      "email": "123",
+      "telefone": "123",
       "id": 4
-    },
-    {
-      "nome": "df d ",
-      "cpf": "",
-      "email": "",
-      "telefone": "",
-      "id": 5
-    },
-    {
-      "nome": "r wrf w",
-      "cpf": "",
-      "email": "",
-      "telefone": "",
-      "id": 6
-    },
-    {
-      "nome": "f ff erfe",
-      "cpf": "",
-      "email": "",
-      "telefone": "",
-      "id": 7
     }
   ]
 }

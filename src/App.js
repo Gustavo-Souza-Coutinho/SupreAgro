@@ -5,10 +5,15 @@ import NavBar from './NavBar/NavBar';
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import IncluirProduto from './ModuloProdutos/IncluirProduto';
 import Home from './ModuloProdutos/Home';
-import FormEdicao from './ModuloProdutos/FormEdicao';
+import FormEdicao from './ModuloProdutos/ProdutoEdicao';
 import IncluirCliente from './ModuloProdutos/IncluirCliente';
 import ListarClientes from './ModuloProdutos/ListarClientes';
 import CadastroPedido from './ModuloProdutos/CadastrarPedido';
+import ListarPedidos from './ModuloProdutos/ListarPedidos';
+import ListagemPedidos from './ModuloProdutos/ListarPedidos';
+import ProdEdicao from './ModuloProdutos/ProdutoEdicao';
+import PedEdicao from './ModuloProdutos/PedidoEdicao';
+import EditarPedido from './ModuloProdutos/PedidoEdicao';
 
 function App() {
   return (
@@ -23,9 +28,11 @@ function App() {
           <Route path='/IncluirProduto' element={<IncluirProduto />} />
           <Route path='/incluirCliente' element={<IncluirCliente />}/>
           <Route path='/listarCliente' element={<ListarClientes />}/>
-          <Route path='/cadastrarPedidos ' element={<CadastroPedido />}/>
+          <Route path='/cadastrarPedidos' element={<CadastroPedido />}/>
+          <Route path='/listarPedidos' element={<ListagemPedidos />}/>
           <Route path='/Sobre' />
-          <Route path='/editar/:id' element={<FormEdicao />} />
+          <Route path='/editarP/:id' element={<ProdEdicao />} />
+          <Route path='/editarPed/:id' element={<EditarPedido />} />
         </Routes>
       </BrowserRouter>
 

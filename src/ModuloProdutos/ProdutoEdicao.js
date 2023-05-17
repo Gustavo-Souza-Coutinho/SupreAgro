@@ -5,7 +5,7 @@ import { ToastContainer, toast } from "react-toastify"; // Importando a bibliote
 import "react-toastify/dist/ReactToastify.css"; // Importando o arquivo de estilos do react-toastify
 import "./css/FormEdicao.css"; // Importando o arquivo CSS
 
-function FormEdicao() {
+function ProdEdicao() {
   const [nome, setNome] = useState('');
   const [preco, setPreco] = useState('');
   const [descricao, setDescricao] = useState('');
@@ -82,5 +82,5 @@ function FormEdicao() {
   );
 }
 
-export default FormEdicao;
+export default ProdEdicao;
 
