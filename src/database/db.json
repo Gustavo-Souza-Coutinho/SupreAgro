@@ -27,16 +27,10 @@
   ],
   "pedidos": [
     {
-      "clienteId": "1",
-      "produtoId": "5",
-      "quantidade": "1",
+      "clienteId": 1,
+      "produtoId": 5,
+      "quantidade": "2",
       "id": 1
-    },
-    {
-      "clienteId": "1",
-      "produtoId": "5",
-      "quantidade": "999",
-      "id": 2
     }
   ],
   "clientes": [

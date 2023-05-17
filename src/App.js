@@ -14,6 +14,7 @@ import ListagemPedidos from './ModuloProdutos/ListarPedidos';
 import ProdEdicao from './ModuloProdutos/ProdutoEdicao';
 import PedEdicao from './ModuloProdutos/PedidoEdicao';
 import EditarPedido from './ModuloProdutos/PedidoEdicao';
+import CliEdicao from './ModuloProdutos/ClienteEdicao';
 
 function App() {
   return (
@@ -31,8 +32,9 @@ function App() {
           <Route path='/cadastrarPedidos' element={<CadastroPedido />}/>
           <Route path='/listarPedidos' element={<ListagemPedidos />}/>
           <Route path='/Sobre' />
-          <Route path='/editarP/:id' element={<ProdEdicao />} />
+          <Route path='/editarPro/:id' element={<ProdEdicao />} />
           <Route path='/editarPed/:id' element={<EditarPedido />} />
+          <Route path='/editarCli/:id' element={<CliEdicao />} />
         </Routes>
       </BrowserRouter>
 

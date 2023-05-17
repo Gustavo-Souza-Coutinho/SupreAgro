@@ -58,7 +58,7 @@ function ListarClientes() {
     return (
       <div>
         {/* Use o componente Link para criar um link de navegação para a página de edição */}
-        <Link to={`/editar/${id}`}>
+        <Link to={`/editarCli/${id}`}>
         <Button icon="pi pi-pencil" className="p-button-rounded p-button-success no-outline" />
 
         </Link>
